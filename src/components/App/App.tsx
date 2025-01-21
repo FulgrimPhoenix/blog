@@ -1,9 +1,10 @@
 import { ThemeProvider } from "@emotion/react";
 import { Header } from "../Header/Header";
 import { NavBar } from "../NavBar/NavBar";
-import { PostsFeed } from "../NewsFeed/PostsFeed";
+import { PostsGrid } from "../PostsGrid/PostsGrid";
 import { AppRoot } from "./App.styles";
 import theme from "../../styles/theme";
+import { MainContent } from "../MainContent/MainContent";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <AppRoot>
         <Header />
         <NavBar />
-        <PostsFeed />
+        <PostsGrid />
+        <MainContent />
       </AppRoot>
     </ThemeProvider>
   );

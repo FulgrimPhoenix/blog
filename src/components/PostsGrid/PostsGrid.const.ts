@@ -19,10 +19,10 @@ export const MAINPOST: IPOST = {
   },
 };
 
-export const POSTSLIST: IPOST[] = [
+export const SECONDARYPOSTS: IPOST[] = [
   {
     title: "Featured post",
-    date: new Date(),
+    date: new Date(2020, 10, 12),
     paragraph:
       "This is a wider card with supporting text below as a natural lead-in to additional content.",
     moreInfo: {
@@ -32,7 +32,7 @@ export const POSTSLIST: IPOST[] = [
   },
   {
     title: "Post title",
-    date: new Date(),
+    date: new Date(2020, 10, 11),
     paragraph:
       "This is a wider card with supporting text below as a natural lead-in to additional content.",
     moreInfo: {

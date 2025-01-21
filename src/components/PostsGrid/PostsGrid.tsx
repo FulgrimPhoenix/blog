@@ -7,9 +7,9 @@ import {
   Paper,
   Typography,
 } from "@mui/material";
-import { MAINPOST, POSTSLIST } from "./PostsFeed.const";
+import { MAINPOST, SECONDARYPOSTS } from "./PostsGrid.const";
 
-export const PostsFeed = () => {
+export const PostsGrid = () => {
   return (
     <>
       <Paper
@@ -22,8 +22,6 @@ export const PostsFeed = () => {
       >
         <Container
           sx={{
-            maxWidth: "50%",
-            padding: "48px 0 48px 48px",
             margin: 0,
             boxSizing: "border-box",
             "@media (min-width:1200px)": {
@@ -56,7 +54,7 @@ export const PostsFeed = () => {
         </Container>
       </Paper>
       <Grid2 container columns={12} spacing={4}>
-        {POSTSLIST.map((post) => {
+        {SECONDARYPOSTS.map((post) => {
           return (
             <Grid2 size={{ xs: 12, sm: 6, md: 6 }}>
               <Card
@@ -72,6 +70,7 @@ export const PostsFeed = () => {
                       maxWidth: "440px",
                       p: "0",
                       m: "0",
+                      boxSizing: "border-box",
                       "@media (min-width:1200px)": {
                         maxWidth: "440px",
                       },
