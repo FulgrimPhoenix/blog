@@ -1,6 +1,14 @@
 import { Container, Typography } from "@mui/material";
+import { JSX } from "react";
 
-export const POSTSLIST = [
+interface IPOST {
+  title: string;
+  date: Date;
+  author: { name: string; link: string };
+  text: JSX.Element;
+}
+
+export const POSTSLIST: IPOST[] = [
   {
     title: "Sample blog post",
     date: new Date(2020, 3, 1),
