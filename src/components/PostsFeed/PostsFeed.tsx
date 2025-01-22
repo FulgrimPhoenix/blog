@@ -27,50 +27,49 @@ export const PostsFeed = () => {
         From the firehose
       </Typography>
       <Divider sx={{ backgroundColor: "rgba(255, 255, 255, 0.12)" }} />
-      <Container
-        sx={{
-          margin: 0,
-          boxSizing: "border-box",
-          "@media (min-width:600px)": {
-            padding: "24px 0 ",
-          },
-        }}
-      >
-        {POSTSLIST.map((post) => {
-          return (
-            <>
-              <Typography
-                component="h5"
-                variant="h5"
-                color="secondary"
-                gutterBottom
-              >
-                {post.title}
-              </Typography>
-              <Typography
-                color="secondary"
-                component="p"
-                sx={{
-                  fontSize: "0.75rem",
-                  fontWeight: "400",
-                  lineHeight: "1.66",
-                  letterSpacing: "0.03333em",
-                  mb: "16px",
-                }}
-              >
-                {`${post.date.toLocaleDateString("en-US", {
-                  month: "long",
-                })} ${post.date.getDate()}, ${post.date.getFullYear()}`}{" "}
-                by{" "}
-                <Link href={post.author.link} underline="none">
-                  {post.author.name}
-                </Link>
-              </Typography>
-              {post.text}
-            </>
-          );
-        })}
-      </Container>
+
+      {POSTSLIST.map((post) => {
+        return (
+          <Container
+            sx={{
+              margin: 0,
+              boxSizing: "border-box",
+              "@media (min-width:600px)": {
+                padding: "24px 0 ",
+              },
+            }}
+          >
+            <Typography
+              component="h5"
+              variant="h5"
+              color="secondary"
+              gutterBottom
+            >
+              {post.title}
+            </Typography>
+            <Typography
+              color="secondary"
+              component="p"
+              sx={{
+                fontSize: "0.75rem",
+                fontWeight: "400",
+                lineHeight: "1.66",
+                letterSpacing: "0.03333em",
+                mb: "16px",
+              }}
+            >
+              {`${post.date.toLocaleDateString("en-US", {
+                month: "long",
+              })} ${post.date.getDate()}, ${post.date.getFullYear()}`}{" "}
+              by{" "}
+              <Link href={post.author.link} underline="none">
+                {post.author.name}
+              </Link>
+            </Typography>
+            {post.text}
+          </Container>
+        );
+      })}
     </Container>
   );
 };
