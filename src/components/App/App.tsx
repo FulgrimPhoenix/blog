@@ -5,6 +5,7 @@ import { PostsGrid } from "../PostsGrid/PostsGrid";
 import { AppRoot } from "./App.styles";
 import theme from "../../styles/theme";
 import { MainContent } from "../MainContent/MainContent";
+import { Footer } from "../Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <NavBar />
         <PostsGrid />
         <MainContent />
+        <Footer />
       </AppRoot>
     </ThemeProvider>
   );
