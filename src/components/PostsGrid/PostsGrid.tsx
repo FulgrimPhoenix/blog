@@ -24,6 +24,7 @@ export const PostsGrid = () => {
           sx={{
             margin: 0,
             boxSizing: "border-box",
+            p: "24px",
             "@media (min-width:1200px)": {
               maxWidth: "50%",
             },
@@ -56,7 +57,7 @@ export const PostsGrid = () => {
       <Grid2 container columns={12} spacing={4}>
         {SECONDARYPOSTS.map((post) => {
           return (
-            <Grid2 size={{ xs: 12, sm: 6, md: 6 }}>
+            <Grid2 size={{ xs: 12, sm: 12, md: 6 }}>
               <Card
                 sx={{
                   backgroundColor: "rgba(66, 66, 66, .9)",
@@ -68,7 +69,7 @@ export const PostsGrid = () => {
                   <Container
                     sx={{
                       maxWidth: "440px",
-                      p: "0",
+                      p: "16px 16px 24px 16px",
                       m: "0",
                       boxSizing: "border-box",
                       "@media (min-width:1200px)": {

@@ -6,6 +6,9 @@ export const AppRoot = styled("div")({
   display: "flex",
   flexDirection: "column",
   margin: "0 auto",
-  padding: "0 24px",
+  padding: "0 16px",
   boxSizing: "border-box",
+  "@media (min-width:600px)": {
+    padding: "0 24px",
+  },
 });

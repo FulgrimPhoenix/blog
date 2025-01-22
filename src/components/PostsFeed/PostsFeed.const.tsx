@@ -82,6 +82,8 @@ export const POSTSLIST: IPOST[] = [
           component="ul"
           sx={{
             m: "14px 0",
+            padding: "0 ",
+            pl: "40px",
             "@media (min-width:600px)": {
               padding: "0 ",
               pl: "40px",
@@ -121,6 +123,8 @@ export const POSTSLIST: IPOST[] = [
         <Container
           component="ol"
           sx={{
+            padding: "0 ",
+            pl: "40px",
             m: "14px 0",
             "@media (min-width:600px)": {
               padding: "0 ",
@@ -213,6 +217,8 @@ export const POSTSLIST: IPOST[] = [
           component="ul"
           sx={{
             m: "14px 0",
+            padding: "0 ",
+            pl: "40px",
             "@media (min-width:600px)": {
               padding: "0 ",
               pl: "40px",

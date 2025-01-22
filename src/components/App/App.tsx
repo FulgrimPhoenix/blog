@@ -15,8 +15,8 @@ function App() {
         <NavBar />
         <PostsGrid />
         <MainContent />
-        <Footer />
       </AppRoot>
+      <Footer />
     </ThemeProvider>
   );
 }

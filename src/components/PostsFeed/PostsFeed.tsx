@@ -7,6 +7,7 @@ export const PostsFeed = () => {
       sx={{
         margin: 0,
         boxSizing: "border-box",
+        p: "20px 0",
         "@media (min-width:600px)": {
           padding: "20px 20px 20px 0px",
         },
@@ -34,6 +35,7 @@ export const PostsFeed = () => {
             sx={{
               margin: 0,
               boxSizing: "border-box",
+              p: "24px 0",
               "@media (min-width:600px)": {
                 padding: "24px 0 ",
               },

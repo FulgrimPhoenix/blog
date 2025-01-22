@@ -8,6 +8,8 @@ export const NavBar = () => {
         display: "flex",
         justifyContent: "space-between",
         flexWrap: "nowrap",
+        overflowX: "auto",
+        minHeight: "48px",
         "@media (min-width:600px)": {
           minHeight: "48px",
         },

@@ -7,8 +7,12 @@ export const LinksBlock = () => {
       sx={{
         margin: 0,
         boxSizing: "border-box",
-        "@media (min-width:600px)": {
+        p: "20px 0",
+        "@media (min-width:769px)": {
           padding: "20px 0 20px 20px",
+        },
+        "@media (min-width:600px)": {
+          p: "20px 0 0",
         },
         display: "flex",
         flexDirection: "column",
@@ -17,7 +21,7 @@ export const LinksBlock = () => {
       <Paper
         sx={{ backgroundColor: "#eeeeee", boxSizing: "border-box", p: "16px" }}
       >
-        <Typography component="h6" variant="h6" color="secondary">
+        <Typography component="h6" variant="h6" color="secondary" gutterBottom>
           About
         </Typography>
         <Typography component="p" variant="body1" color="secondary">
