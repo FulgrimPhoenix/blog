@@ -28,7 +28,7 @@ export const PostsGrid = () => {
             "@media (min-width:1200px)": {
               maxWidth: "50%",
             },
-            "@media (min-width:600px)": {
+            "@media (min-width:769px)": {
               padding: "48px 0 48px 48px",
             },
           }}
