@@ -3,18 +3,18 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import React from "react";
 
-interface ARCHIVELINK {
+interface IArchive_link {
   title: string;
   link: string;
 }
 
-interface SOCIALMEDIALINK {
+interface ISocial_media_link {
   icon: React.ElementType;
   title: string;
   link: string;
 }
 
-export const ARCHIVELINKS: ARCHIVELINK[] = [
+export const ARCHIVE_LINKS: IArchive_link[] = [
   { title: "March 2020", link: "#" },
   { title: "February 2020", link: "#" },
   { title: "January 2020", link: "#" },
@@ -28,7 +28,7 @@ export const ARCHIVELINKS: ARCHIVELINK[] = [
   { title: "April 1999", link: "#" },
 ];
 
-export const SOCIALMEDIALINKS: SOCIALMEDIALINK[] = [
+export const SOCIAL_MEDIA_LINKS: ISocial_media_link[] = [
   { icon: GitHubIcon, title: "GitHub", link: "#" },
   { icon: TwitterIcon, title: "Twitter", link: "#" },
   { icon: FacebookIcon, title: "Facebook", link: "#" },

@@ -2,23 +2,21 @@ import { ThemeProvider } from "@emotion/react";
 import { Header } from "../Header/Header";
 import { NavBar } from "../NavBar/NavBar";
 import { PostsGrid } from "../PostsGrid/PostsGrid";
-import { AppRoot } from "./App.styles";
+import { BlogRoot } from "./Blog.styles";
 import theme from "../../styles/theme";
 import { MainContent } from "../MainContent/MainContent";
 import { Footer } from "../Footer/Footer";
 
-function App() {
+export function Blog() {
   return (
-    <ThemeProvider theme={theme}>
-      <AppRoot>
+    <>
+      <BlogRoot>
         <Header />
         <NavBar />
         <PostsGrid />
         <MainContent />
-      </AppRoot>
+      </BlogRoot>
       <Footer />
-    </ThemeProvider>
+    </>
   );
 }
-
-export default App;

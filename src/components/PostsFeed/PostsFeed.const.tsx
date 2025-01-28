@@ -15,7 +15,7 @@ export const POSTSLIST: IPOST[] = [
     author: { name: "Olivier", link: "#" },
     text: (
       <>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           This blog post shows a few different types of content that are
           supported and styled with Material styles. Basic typography, images,
           and code are all supported. You can extend these by modifying{" "}
@@ -23,13 +23,13 @@ export const POSTSLIST: IPOST[] = [
             {"Markdown.js."}
           </Typography>
         </Typography>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
           ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
           quam venenatis vestibulum. Sed posuere consectetur est at lobortis.
           Cras mattis consectetur purus sit amet fermentum.
         </Typography>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Curabitur blandit tempus porttitor.{" "}
           <Typography component="strong" fontWeight="700">
             Nullam quis risus eget urna mollis
@@ -37,15 +37,15 @@ export const POSTSLIST: IPOST[] = [
           ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id
           elit.
         </Typography>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Etiam porta sem malesuada magna mollis euismod. Cras mattis
           consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla
           sed consectetur.
         </Typography>
-        <Typography component="h6" variant="h6" color="secondary" gutterBottom>
+        <Typography component="h6" variant="h6" color="primary" gutterBottom>
           Heading
         </Typography>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
           Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
           lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac,
@@ -54,24 +54,24 @@ export const POSTSLIST: IPOST[] = [
         <Typography
           component="h6"
           variant="subtitle1"
-          color="secondary"
+          color="primary"
           gutterBottom
         >
           Sub-heading
         </Typography>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
           ridiculus mus.
         </Typography>
         <Typography
           component="h6"
           variant="subtitle1"
-          color="secondary"
+          color="primary"
           gutterBottom
         >
           Sub-heading
         </Typography>
-        <Typography color="secondary">
+        <Typography color="primary">
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
           ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam
           porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac
@@ -93,7 +93,7 @@ export const POSTSLIST: IPOST[] = [
           <Typography
             component="li"
             variant="body1"
-            color="secondary"
+            color="primary"
             sx={{ mt: "8px" }}
           >
             Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
@@ -102,7 +102,7 @@ export const POSTSLIST: IPOST[] = [
           <Typography
             component="li"
             variant="body1"
-            color="secondary"
+            color="primary"
             sx={{ mt: "8px" }}
           >
             Donec id elit non mi porta gravida at eget metus.
@@ -110,13 +110,13 @@ export const POSTSLIST: IPOST[] = [
           <Typography
             component="li"
             variant="body1"
-            color="secondary"
+            color="primary"
             sx={{ mt: "8px" }}
           >
             Nulla vitae elit libero, a pharetra augue.
           </Typography>
         </Container>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit
           libero, a pharetra augue.
         </Typography>
@@ -135,7 +135,7 @@ export const POSTSLIST: IPOST[] = [
           <Typography
             component="li"
             variant="body1"
-            color="secondary"
+            color="primary"
             sx={{ mt: "8px" }}
           >
             Vestibulum id ligula porta felis euismod semper.
@@ -144,7 +144,7 @@ export const POSTSLIST: IPOST[] = [
           <Typography
             component="li"
             variant="body1"
-            color="secondary"
+            color="primary"
             sx={{ mt: "8px" }}
           >
             Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -153,13 +153,13 @@ export const POSTSLIST: IPOST[] = [
           <Typography
             component="li"
             variant="body1"
-            color="secondary"
+            color="primary"
             sx={{ mt: "8px" }}
           >
             Maecenas sed diam eget risus varius blandit sit amet non magna.
           </Typography>
         </Container>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Cras mattis consectetur purus sit amet fermentum. Sed posuere
           consectetur est at lobortis.
         </Typography>
@@ -172,13 +172,13 @@ export const POSTSLIST: IPOST[] = [
     author: { name: "Matt", link: "#" },
     text: (
       <>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
           ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
           quam venenatis vestibulum. Sed posuere consectetur est at lobortis.
           Cras mattis consectetur purus sit amet fermentum.
         </Typography>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Curabitur blandit tempus porttitor.{" "}
           <Typography component="strong" fontWeight="700">
             Nullam quis risus eget urna mollis
@@ -186,12 +186,12 @@ export const POSTSLIST: IPOST[] = [
           ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id
           elit.
         </Typography>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Etiam porta sem malesuada magna mollis euismod. Cras mattis
           consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla
           sed consectetur.
         </Typography>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
           Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
           lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac,
@@ -206,7 +206,7 @@ export const POSTSLIST: IPOST[] = [
     author: { name: "Tom", link: "#" },
     text: (
       <>
-        <Typography color="secondary">
+        <Typography color="primary">
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
           ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam
           porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac
@@ -228,7 +228,7 @@ export const POSTSLIST: IPOST[] = [
           <Typography
             component="li"
             variant="body1"
-            color="secondary"
+            color="primary"
             sx={{ mt: "8px" }}
           >
             Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
@@ -237,7 +237,7 @@ export const POSTSLIST: IPOST[] = [
           <Typography
             component="li"
             variant="body1"
-            color="secondary"
+            color="primary"
             sx={{ mt: "8px" }}
           >
             Donec id elit non mi porta gravida at eget metus.
@@ -245,18 +245,18 @@ export const POSTSLIST: IPOST[] = [
           <Typography
             component="li"
             variant="body1"
-            color="secondary"
+            color="primary"
             sx={{ mt: "8px" }}
           >
             Nulla vitae elit libero, a pharetra augue.
           </Typography>
         </Container>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Etiam porta sem malesuada magna mollis euismod. Cras mattis
           consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla
           sed consectetur.
         </Typography>
-        <Typography color="secondary" sx={{ mb: "16px" }}>
+        <Typography color="primary" sx={{ mb: "16px" }}>
           Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit
           libero, a pharetra augue.
         </Typography>

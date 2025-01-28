@@ -1,23 +1,10 @@
 import { Container, Link, Paper, SvgIcon, Typography } from "@mui/material";
-import { ARCHIVELINKS, SOCIALMEDIALINKS } from "./LinksBlock.const";
+import { ARCHIVE_LINKS, SOCIAL_MEDIA_LINKS } from "./LinksBlock.const";
+import { LinksBlockRoot } from "./LinksBlock.styes";
 
 export const LinksBlock = () => {
   return (
-    <Container
-      sx={{
-        margin: 0,
-        boxSizing: "border-box",
-        p: "20px 0",
-        "@media (min-width:769px)": {
-          padding: "20px 0 20px 20px",
-        },
-        "@media (min-width:600px)": {
-          p: "20px 0 0",
-        },
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
+    <LinksBlockRoot>
       <Paper
         sx={{ backgroundColor: "#eeeeee", boxSizing: "border-box", p: "16px" }}
       >
@@ -33,43 +20,39 @@ export const LinksBlock = () => {
       <Typography
         component="h6"
         variant="h6"
-        color="secondary"
+        color="primary"
         sx={{ mt: "24px" }}
         gutterBottom
       >
         Archives
       </Typography>
-      {ARCHIVELINKS.map((link) => {
-        return (
-          <Link
-            href={link.link}
-            variant="body1"
-            color="primary"
-            underline="hover"
-          >
-            {link.title}
-          </Link>
-        );
-      })}
+      {ARCHIVE_LINKS.map((link) => (
+        <Link href={link.link} variant="body1" color="info" underline="hover">
+          {link.title}
+        </Link>
+      ))}
       <Typography
         component="h6"
         variant="h6"
-        color="secondary"
+        color="primary"
         sx={{ mt: "24px" }}
         gutterBottom
       >
         Social
       </Typography>
-      {SOCIALMEDIALINKS.map((link) => {
-        return (
-          <Link href={link.link} sx={{ display: "flex" }} underline="hover">
-            <SvgIcon component={link.icon} sx={{ p: "4px 4px 4px 0" }} />
-            <Typography component="span" sx={{ p: "4px", m: "auto 0" }}>
-              {link.title}
-            </Typography>
-          </Link>
-        );
-      })}
-    </Container>
+      {SOCIAL_MEDIA_LINKS.map((link) => (
+        <Link
+          href={link.link}
+          sx={{ display: "flex" }}
+          underline="hover"
+          color="info"
+        >
+          <SvgIcon component={link.icon} sx={{ p: "4px 4px 4px 0" }} />
+          <Typography component="span" sx={{ p: "4px", m: "auto 0" }}>
+            {link.title}
+          </Typography>
+        </Link>
+      ))}
+    </LinksBlockRoot>
   );
 };

@@ -1,33 +1,28 @@
 import { Link, Toolbar } from "@mui/material";
 import { LINKS } from "./NavBar.const";
+import { NavBarRoot } from "./NavBar.styles";
 
 export const NavBar = () => {
   return (
-    <Toolbar
-      sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        flexWrap: "nowrap",
-        overflowX: "auto",
-        minHeight: "48px",
-        "@media (min-width:600px)": {
-          minHeight: "48px",
-        },
-      }}
-      component={"nav"}
-    >
+    <NavBarRoot as="nav">
       {LINKS.map((link) => {
         return (
           <Link
             variant="body2"
             href={link.link}
             underline="hover"
-            sx={{ lineHeight: "20px", padding: "8px", color: "#fff" }}
+            color="primary"
+            sx={{
+              lineHeight: "20px",
+              padding: "8px",
+              maxHeight: "36px",
+              boxSizing: "border-box",
+            }}
           >
             {link.title}
           </Link>
         );
       })}
-    </Toolbar>
+    </NavBarRoot>
   );
 };

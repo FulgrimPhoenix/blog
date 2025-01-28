@@ -1,6 +1,6 @@
 import { styled } from "@mui/material";
 
-export const AppRoot = styled("div")({
+export const BlogRoot = styled("div")({
   maxWidth: "1280px",
   width: "100%",
   display: "flex",

@@ -1,13 +1,10 @@
+import { CardActionArea, Grid2, Link, Paper, Typography } from "@mui/material";
+import { MAIN_POST, SECONDARY_POSTS } from "./PostsGrid.const";
 import {
-  Card,
-  CardActionArea,
-  Container,
-  Grid2,
-  Link,
-  Paper,
-  Typography,
-} from "@mui/material";
-import { MAINPOST, SECONDARYPOSTS } from "./PostsGrid.const";
+  CardContainer,
+  CardContent,
+  MainPostContent,
+} from "./PostsGrid.styles";
 
 export const PostsGrid = () => {
   return (
@@ -20,74 +17,43 @@ export const PostsGrid = () => {
           mb: "32px",
         }}
       >
-        <Container
-          sx={{
-            margin: 0,
-            boxSizing: "border-box",
-            p: "24px",
-            "@media (min-width:1200px)": {
-              maxWidth: "50%",
-            },
-            "@media (min-width:769px)": {
-              padding: "48px 0 48px 48px",
-            },
-          }}
-        >
-          <Typography variant="h3" component="h1" color="#fff" gutterBottom>
-            {MAINPOST.title}
+        <MainPostContent>
+          <Typography variant="h3" component="h1" color="primary" gutterBottom>
+            {MAIN_POST.title}
           </Typography>
           <Typography
             variant="h5"
             component="p"
-            color="#fff"
+            color="primary"
             sx={{ mb: "16px" }}
           >
-            {MAINPOST.paragraph}
+            {MAIN_POST.paragraph}
           </Typography>
           <Link
-            href={MAINPOST.moreInfo.link}
+            href={MAIN_POST.moreInfo.link}
             underline="hover"
-            color="primary"
+            color="info"
             sx={{ lineHeight: "1.75", fontSize: "1rem", fontWeight: "400" }}
           >
-            {MAINPOST.moreInfo.linkText}
+            {MAIN_POST.moreInfo.linkText}
           </Link>
-        </Container>
+        </MainPostContent>
       </Paper>
       <Grid2 container columns={12} spacing={4}>
-        {SECONDARYPOSTS.map((post) => {
+        {SECONDARY_POSTS.map((post) => {
           return (
             <Grid2 size={{ xs: 12, sm: 12, md: 6 }}>
-              <Card
-                sx={{
-                  backgroundColor: "rgba(66, 66, 66, .9)",
-                  transition: "background .3s linear",
-                  ":hover": { backgroundColor: "rgba(66, 66, 66, 1)" },
-                }}
-              >
+              <CardContainer>
                 <CardActionArea>
-                  <Container
-                    sx={{
-                      maxWidth: "440px",
-                      p: "16px 16px 24px 16px",
-                      m: "0",
-                      boxSizing: "border-box",
-                      "@media (min-width:1200px)": {
-                        maxWidth: "440px",
-                      },
-                      "@media (min-width:600px)": {
-                        p: "16px 16px 24px",
-                      },
-                    }}
-                  >
-                    <Typography component="h2" variant="h5" color="secondary">
+                  <CardContent>
+                    <Typography component="h2" variant="h5" color="primary">
                       {post.title}
                     </Typography>
                     <Typography
                       component="h6"
                       variant="subtitle1"
+                      color="secondary"
                       sx={{
-                        color: "rgba(255, 255, 255, 0.7)",
                         fontSize: "1rem",
                         fontWeight: "400",
                       }}
@@ -101,7 +67,7 @@ export const PostsGrid = () => {
                     <Typography
                       component="p"
                       variant="subtitle1"
-                      color="secondary"
+                      color="primary"
                       sx={{ pb: "16px" }}
                     >
                       {post.paragraph}
@@ -109,7 +75,7 @@ export const PostsGrid = () => {
                     <Link
                       href={post.moreInfo.link}
                       underline="none"
-                      color="primary"
+                      color="info"
                       sx={{
                         lineHeight: "1.75",
                         fontSize: "1rem",
@@ -118,9 +84,9 @@ export const PostsGrid = () => {
                     >
                       {post.moreInfo.linkText}
                     </Link>
-                  </Container>
+                  </CardContent>
                 </CardActionArea>
-              </Card>
+              </CardContainer>
             </Grid2>
           );
         })}

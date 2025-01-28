@@ -1,34 +1,28 @@
 import { AppBar, Button, IconButton, Toolbar, Typography } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import { HeaderRoot } from "./Header.styles";
 
 export const Header = () => {
   return (
-    <AppBar
-      position="static"
-      sx={{
-        background: "none",
-        boxShadow: "none",
-        borderBottom: "1px solid rgba(255, 255, 255, 0.12)",
-      }}
-    >
+    <HeaderRoot position="static">
       <Toolbar>
-        <Button size="small" color="secondary">
+        <Button size="small" color="primary">
           subscribe
         </Button>
         <Typography
           variant="h5"
           component="h2"
           sx={{ flexGrow: 2, textAlign: "center" }}
-          color="secondary"
+          color="primary"
         >
           Blog
         </Typography>
-        <IconButton size="large" color="secondary">
+        <IconButton size="large" color="primary">
           <SearchIcon />
         </IconButton>
         <Button
           size="small"
-          color="secondary"
+          color="primary"
           sx={{
             p: "3px 9px",
             border: "1px solid rgba(255, 255, 255, 0.2)",
@@ -38,6 +32,6 @@ export const Header = () => {
           sign up
         </Button>
       </Toolbar>
-    </AppBar>
+    </HeaderRoot>
   );
 };

@@ -1,4 +1,4 @@
-interface IPOST {
+interface IPost {
   title: string;
   date: null | Date;
   paragraph: string;
@@ -8,7 +8,7 @@ interface IPOST {
   };
 }
 
-export const MAINPOST: IPOST = {
+export const MAIN_POST: IPost = {
   title: "Title of a longer featured blog post",
   date: null,
   paragraph:
@@ -19,7 +19,7 @@ export const MAINPOST: IPOST = {
   },
 };
 
-export const SECONDARYPOSTS: IPOST[] = [
+export const SECONDARY_POSTS: IPost[] = [
   {
     title: "Featured post",
     date: new Date(2020, 10, 12),

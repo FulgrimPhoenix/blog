@@ -1,9 +1,9 @@
-interface ILINKS {
+interface ILink {
   title: string;
   link: string;
 }
 
-export const LINKS: ILINKS[] = [
+export const LINKS: ILink[] = [
   {
     title: "Technology",
     link: "#",
