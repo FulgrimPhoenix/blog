@@ -1,12 +1,17 @@
 import { Container, Link, Paper, SvgIcon, Typography } from "@mui/material";
 import { ARCHIVE_LINKS, SOCIAL_MEDIA_LINKS } from "./LinksBlock.const";
 import { LinksBlockRoot } from "./LinksBlock.styes";
+import theme from "../../styles/theme";
 
 export const LinksBlock = () => {
   return (
     <LinksBlockRoot>
       <Paper
-        sx={{ backgroundColor: "#eeeeee", boxSizing: "border-box", p: "16px" }}
+        sx={{
+          backgroundColor: theme.palette.primary.light,
+          boxSizing: "border-box",
+          p: "16px",
+        }}
       >
         <Typography component="h6" variant="h6" color="secondary" gutterBottom>
           About

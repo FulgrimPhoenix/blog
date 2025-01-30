@@ -25,8 +25,8 @@ export const CardContent = styled(Container)({
   },
 });
 
-export const CardContainer = styled(Card)({
-  backgroundColor: "rgba(85, 85, 85, 0.9)",
+export const CardContainer = styled(Card)(({ theme }) => ({
+  backgroundColor: theme.palette.background.paper,
   transition: "background .3s linear",
   ":hover": { backgroundColor: "rgba(66, 66, 66, 1)" },
-});
+}));

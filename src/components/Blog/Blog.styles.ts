@@ -1,7 +1,8 @@
 import { styled } from "@mui/material";
 
-export const BlogRoot = styled("div")({
+export const BlogRoot = styled("div")(({ theme }) => ({
   maxWidth: "1280px",
+  background: theme.palette.background.default,
   width: "100%",
   display: "flex",
   flexDirection: "column",
@@ -11,4 +12,4 @@ export const BlogRoot = styled("div")({
   "@media (min-width:600px)": {
     padding: "0 24px",
   },
-});
+}));

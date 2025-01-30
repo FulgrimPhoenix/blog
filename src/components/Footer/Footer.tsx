@@ -1,4 +1,4 @@
-import { Container, Link, Typography } from "@mui/material";
+import { Link, Typography } from "@mui/material";
 import { FooterRoot } from "./Footer.styles";
 
 export const Footer = () => {

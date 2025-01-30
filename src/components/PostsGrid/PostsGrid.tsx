@@ -13,7 +13,6 @@ export const PostsGrid = () => {
         elevation={1}
         variant="elevation"
         sx={{
-          backgroundColor: "rgba(66, 66, 66, .6)",
           mb: "32px",
         }}
       >
