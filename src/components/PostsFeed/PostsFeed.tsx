@@ -1,4 +1,4 @@
-import { Container, Divider, Link, Typography } from "@mui/material";
+import { Divider, Link, Typography } from "@mui/material";
 import { POSTSLIST } from "./PostsFeed.const";
 import { PostContainer, PostsFeedRoot } from "./PostsFeed.styles";
 

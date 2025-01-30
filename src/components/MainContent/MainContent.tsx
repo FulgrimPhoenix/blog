@@ -1,5 +1,4 @@
 import { Grid2 } from "@mui/material";
-import React from "react";
 import { PostsFeed } from "../PostsFeed/PostsFeed";
 import { LinksBlock } from "../LinksBlock/LinksBlock";
 

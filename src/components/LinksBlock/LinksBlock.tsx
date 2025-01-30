@@ -1,4 +1,4 @@
-import { Container, Link, Paper, SvgIcon, Typography } from "@mui/material";
+import { Link, Paper, SvgIcon, Typography } from "@mui/material";
 import { ARCHIVE_LINKS, SOCIAL_MEDIA_LINKS } from "./LinksBlock.const";
 import { LinksBlockRoot } from "./LinksBlock.styes";
 import theme from "../../styles/theme";

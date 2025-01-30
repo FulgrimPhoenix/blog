@@ -1,4 +1,4 @@
-import { Link, Toolbar } from "@mui/material";
+import { Link } from "@mui/material";
 import { LINKS } from "./NavBar.const";
 import { NavBarRoot } from "./NavBar.styles";
 

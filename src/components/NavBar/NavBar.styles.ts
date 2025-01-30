@@ -1,5 +1,5 @@
-import { AppBar, Toolbar } from "@mui/material";
-import { padding, styled } from "@mui/system";
+import { Toolbar } from "@mui/material";
+import { styled } from "@mui/system";
 
 export const NavBarRoot = styled(Toolbar)({
   display: "flex",
